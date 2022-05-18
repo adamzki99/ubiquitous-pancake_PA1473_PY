@@ -1,4 +1,6 @@
 
+
+
 from pybricks.hubs import EV3Brick
 from pybricks.robotics import DriveBase
 from pybricks.ev3devices import Motor, TouchSensor, ColorSensor, UltrasonicSensor
@@ -73,10 +75,12 @@ class DriveRobot:
             "brown": Color.BROWN,
             "blue": Color.BLUE,
             "red": Color.RED,
+
             "green": Color.GREEN, }
         self.curr_col = color_dict[str_color]
 
     def set_color_change(self, str_color_change, col_change2 = "brown"):
+
         color_dict = {
             "brown": Color.BROWN,
             "blue": Color.BLUE,
@@ -181,3 +185,4 @@ class DriveRobot:
         for i in range(4):
             speak("Beep")
             wait(1000)
+
